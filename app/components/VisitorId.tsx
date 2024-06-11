@@ -1,3 +1,5 @@
+'use client';
+
 import { useVisitorData } from "@fingerprintjs/fingerprintjs-pro-react";
 
 export default function VisitorId() {
