@@ -1,6 +1,6 @@
 import {
   FpjsProvider,
-  FingerprintJSPro
+  // FingerprintJSPro
 } from '@fingerprintjs/fingerprintjs-pro-react'
 import VisitorId from "./components/VisitorId";
 
@@ -9,14 +9,14 @@ export default function Home() {
     <FpjsProvider
       loadOptions={{
         apiKey: process.env.NEXT_PUBLIC_FINGERPRINT_API_KEY as string,
-        endpoint: [
-          // "https://metrics.yourwebsite.com", 
-          FingerprintJSPro.defaultEndpoint
-        ],
-        scriptUrlPattern: [
-          // "https://metrics.yourwebsite.com/web/v<version>/<apiKey>/loader_v<loaderVersion>.js",
-          FingerprintJSPro.defaultScriptUrlPattern
-        ],
+        // endpoint: [
+        //   // "https://metrics.yourwebsite.com", 
+        //   FingerprintJSPro.defaultEndpoint
+        // ],
+        // scriptUrlPattern: [
+        //   // "https://metrics.yourwebsite.com/web/v<version>/<apiKey>/loader_v<loaderVersion>.js",
+        //   FingerprintJSPro.defaultScriptUrlPattern
+        // ],
         region: "eu"
       }}
     >
